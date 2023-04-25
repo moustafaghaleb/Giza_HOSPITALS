@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> مصادرنا </title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" >
+        <link rel="stylesheet" href="../css/bootstrap.min.css.map" >
+        <link rel="stylesheet" href="../css/style.css" >
+        <style>
+            .source {
+                padding: 100px;
+            }
+            
+            p {
+                text-align: justify;
+                margin-bottom: 30px;
+            }
+            h2 {
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              
+                <a class="navbar-brand" >مصادرنا</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="../index.html">القائمة الرئيسية</a>
+                        </li>
+                          
+                        <li class="nav-item">
+                          <a class="nav-link " href="../html/about.html">عن دراستنا</a>
+                        </li>
+                          
+                        <li class="nav-item">
+                          <a class="nav-link" href="../html/team.html">الفريق المختص</a>
+                        </li>
+                          
+                        <li class="nav-item">
+                          <a class="nav-link active" href="../html/source.html">مصادرنا</a>
+                        </li>
+                          
+                          
+                      </ul>
+                </div>
+              
+          </div>
+        </nav>
+    
+
+        <div class="source container">
+            <h2> تحليل مقياس التشتت والتجمع العمرني لمنطقة الدراسة </h2>
+            <p class="lead"> بعد تصنيف المرئيات واستخلاص طبقة المستشفيات بمدينه الجيزة قُمنا بأحد التطبيقات الهامة وهو معرفة نمط المستشفيات السائد بالمحافظة وهذا تطبيقاً خلال برنامج Arc Map  وصندوق التحليلات Arc Toolbox وهذا من خلال تحليلات الإحصاءات المكانية وذلك باستخدام طريقة الجار الإقرب تم تحديد نمط المستشفيات السائد بالمدينة وهو " نمط منتظم التوزيع ". ونستوفي في موجز مُبسط فكرة تطبيق الجار الإقرب وتحليل نتائجه وهذا كما يلي:
+تقوم فكرة الجار الإقرب هنا على قياس المسافة على خط مستقيم بين نقطة على الخريطة ونقطة أخرى مجاورة لها، ثم مقارنة هذه المسافة مع " المسافة المتوقعة " لو كانت كل النقاط موزعة بشكل عشوائي على مساحة المنطقة المدروسة. ويمكن تطبيق هذه الفكرة حسابياً كما يلي:
+ </p>
+                        <ol>
+                    
+<li>	حساب المسافة بين كل نقطة وأقرب نقطة منها، ولو كان الشكل مظلعاً تؤخذ بين مراكز المضلعات، ولو كانت الأشكال خطوطاً تؤخذ مراكزها الهندسية. </li>
+<li>	نحصل على المجموع الجبري لهذه المسافات.	</li>
+<li>	يقسم هذا المجموع على عدد القياسات المأخوذة فيعطي قيمة تسمى متوسط المسافات المُلاحظة. </li>
+<li>تُحسب كثافة النقاط في المنطقة المدروسة = عدد النقاط \ المساحة .	</li>
+<li>	يحسب المتوسط المتوقع لتوزيع منتظم من النقاط على المساحة نفسها وهو يساوي                          ( 0.5 * الجر التربيعي للكسافة ) . </li>
+<li>	مؤشر الجار الأقرب = متوسط المسافة الملاحظة \ المتوسط المتوقع للتوزيع المنتظم.</li>
+</ol>
+                  <p class="lead"> وتتراوح قيمة مؤشر الجار الأقرب بين ( صفر – 2.15 ). وتعني القيمة صفر أن كل النقاط متجمعة معاً في مكان واحد، أما القيمة 2.15 فتعني أن كل النقاط أبعد ما تكون بعضها عن بعض مكونة مكونة توزيعاً منتظماً تماماً ( مشتت )، وتعني القيمة 1 أن التوزيع عشوائي. 
+ </p>
+             <div class="study-map">
+                        <img class="img-thumbnail" src="../photo/%D8%A7%D9%84%D8%AA%D8%B4%D8%AA%D8%AA.jpg" width="100%">
+                    </div>
+            <p class="lead"> ومن خلال تطبيق هذا المؤشر على منطقة الدراسة إتضح لنا أن نمط المستشفيات بها ذو النمط منتظم تماما لأن (مؤشر الجار الاقرب 4.4) وظهر لنا تقرير عن هذه النتيجة كما يلي: </p>
+            <div class="study-map">
+                        <img class="img-thumbnail" src="../photo/%D8%A7%D9%84%D8%AA%D8%B4%D8%AA%D8%AA2.jpg" width="100%">
+                    </div>
+            
+            <table class="table">
+              <thead>
+                <tr class="table-dark">
+                  <th scope="col">المسلسل</th>
+                  <th scope="col">اسم المصدر</th>
+                  <th scope="col">الرابط</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-info">
+                  <th scope="row">1</th>
+                  <td>دراسة جرجس 2020 مياة الشرب في مدينة الجيزة</td>
+                  <td><button class="btn btn-dark btn-sm"><a href="https://www.academia.edu/44483750/%D9%85%D9%8A%D8%A7%D9%87_%D8%A7%D9%84%D8%B4%D8%B1%D8%A8_%D9%81%D9%89_%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9" target="_blank"> اضغط هنا! </a></button></td>
+
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>مياه الشرب في مدينة الجيزة - دراسة جغرافية، نعمة سليم جرجس - كوكب المنى</td>
+                  <td><button class="btn btn-dark btn-sm"><a href="https://www.merefa2000.com/" target="_blank"> اضغط هنا! </a></button></td>
+                </tr> 
+                <tr class="table-info">
+                  <th scope="row">3</th>
+                  <td>التعداد العام للسكان والإسكان والمنشآت لعام 2017 </td>
+                  <td><button class="btn btn-dark btn-sm"><a href="https://www.enow.gov.eg/" target="_blank"> اضغط هنا! </a></button></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>ﻣﺠﻠﺔ اﻟﺘﺨﻄﻴﻂ ا ﻟﻌﻤﺮاﻧﻲ و اﻟﻤﺠﺎﻟﻲ - المركز الديمقراطي العربي</td>
+                  <td><button class="btn btn-dark btn-sm"><a href="https://democraticac.de/" target="_blank"> اضغط هنا! </a></button></td>
+                </tr> 
+                <tr class="table-info">
+                  <th scope="row">5</th>
+                  <td>هيئة التخطيط العمراني</td>
+                  <td><button class="btn btn-dark btn-sm"><a href="https://mhuc.gov.eg/%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%84%D9%84%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7_%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A" target="_blank"> اضغط هنا! </a></button></td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>المركز القومى للتعبئة والاحصاء</td>
+                  <td><button class="btn btn-dark btn-sm"><a href="https://www.capmas.gov.eg/" target="_blank"> اضغط هنا! </a></button></td>
+                </tr> 
+              </tbody>
+            </table>
+        
+        </div>
+        
+        
+        <footer>
+            <p> جميع الحقوق محفوظة  <a href="https://mhuc.gov.eg/%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D9%84%D9%84%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7_%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A" target="_blank"> الهيئة العامة للتخطيط العمراني</a> </p>
+        </footer>
+        
+        <script src="../js/bootstrap.bundle.min.js"> </script>
+    </body>
+
+
+</html>
