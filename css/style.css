@@ -1,7 +1,18 @@
 body {
     direction: rtl;
 }
+a.LINK:link, a.LINK:visited {
+  background-color: powderblue;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 
+a.LINK:hover, .btn btn-outline-dark:active {
+  background-color: white;
+}
 
 footer {
     background-color: black;
