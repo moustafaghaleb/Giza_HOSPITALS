@@ -1,10 +1,10 @@
 body {
     direction: rtl;
     background-image: url(../photo/Background.jpeg);
-    background-repeat: no-repeat;
-    background-clip: padding-box;
-    background-size:1390px;
-    height: 100vh;
+ background-repeat: repeat-y;
+    
+    background-size:1800px;
+    height: 100%;
     width: 100%;
         
 }
