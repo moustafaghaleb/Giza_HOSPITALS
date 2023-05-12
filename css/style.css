@@ -1,5 +1,6 @@
 body {
     direction: rtl;
+    background-image: url(../photo/Background.jpeg)
 }
 a.LINK:link, a.LINK:visited {
   background-color: powderblue;
