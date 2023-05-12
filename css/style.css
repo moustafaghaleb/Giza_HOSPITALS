@@ -1,6 +1,12 @@
 body {
     direction: rtl;
-    background-image: url(../photo/Background.jpeg)
+    background-image: url(../photo/Background.jpeg);
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-size:1390px;
+    height: 100vh;
+    width: 100%;
+        
 }
 a.LINK:link, a.LINK:visited {
   background-color: powderblue;
